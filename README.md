@@ -12,7 +12,7 @@ Este script Python foi desenvolvido para extrair dados de um arquivo CSV e salv√
 1. **Clone o reposit√≥rio:**
 
    ```bash
-   git clone https://github.com/Gilderlan0101/csv-to-txt-python.git
+   git clone [https://github.com/Gilderlan0101/csv-to-txt-python.git](https://github.com/Gilderlan0101/csv-to-txt-python/blob/42dcc16de94a12309ea8f507ef4a55fe166fc080/app.py)
    cd seu_repositorio
 
   Funciona de um modo bem simples:
