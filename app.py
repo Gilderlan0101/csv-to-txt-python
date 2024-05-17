@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-import pyautogui
+#libs
 import time
 import pandas as pd
 import os
-pyautogui.PAUSE = 0.5
+
 
 flag = True
 # Recebendo os aquivo do usuario
@@ -38,7 +38,7 @@ if flag == True:
 with open(output_file,'w') as arquivo:
 
     for line in tabela.index:
-    
+ # tabela.loc estou localizando cada coluna e pegando apenas oque tem nelas       
         codigo = str(tabela.loc[line, 'codigo'])
         marca = str(tabela.loc[line, 'marca'])
         tipo = str(tabela.loc[line, 'tipo'])
@@ -50,11 +50,11 @@ with open(output_file,'w') as arquivo:
         time.sleep(0.3)
         
         custo = str(tabela.loc[line, 'custo'])
-
+# Escrevendo os dados no arquivo
         arquivo.write(f'codigo: {codigo}, marca: {marca}, tipo: {tipo}, categoria: {categoria}, preço: {preco}, custo: {custo}\n')
   
 
 
-
-print(f'Arquivo salvo em {output_file}')
+if flag:
+    print(f'Arquivo salvo em {output_file}')
 
